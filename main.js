@@ -1,6 +1,5 @@
 
-import { router } from "./src/router";
-import 'bootstrap/dist/css/bootstrap.css';
+import { router } from "./src/router/index.js";
 
 
 const init = () => {
@@ -12,5 +11,3 @@ const init = () => {
 };
 
 window.addEventListener("load", init);
-
-

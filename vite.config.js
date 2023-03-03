@@ -6,14 +6,15 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        main: './index.html',
+        main: './index.hmtl',
+        
       },
     },
     plugins: [
       copy({
         targets: [
-          { src: 'node_modules/bootstrap/dist/css/bootstrap.min.css', dest: 'dist' },
-          { src: 'node_modules/bootstrap/dist/js/bootstrap.min.js', dest: 'dist' },
+          { src: './node_modules/bootstrap/dist/css/bootstrap.min.css', dest: 'dist' },
+          { src: './node_modules/bootstrap/dist/js/bootstrap.min.js', dest: 'dist' },
         ],
       }),
     ],
