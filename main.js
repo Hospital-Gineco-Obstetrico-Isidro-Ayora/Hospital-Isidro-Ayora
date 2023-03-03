@@ -1,5 +1,5 @@
 
-import { router } from "./src/router/index.route";
+import { router } from "./src/router";
 
 
 const init = () => {
