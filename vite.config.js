@@ -6,8 +6,8 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        main: './index.hmtl',
-        
+        main: './index.html',
+
       },
     },
     plugins: [
