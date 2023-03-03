@@ -1,4 +1,4 @@
-import view from '../views/posts.html?raw';
+import view from '../views/servicios.html?raw';
 
 export default () => {
     const divElement = document.createElement('div');
