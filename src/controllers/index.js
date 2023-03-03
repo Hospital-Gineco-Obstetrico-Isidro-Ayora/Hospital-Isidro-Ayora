@@ -1,9 +1,11 @@
 import Home from "./home.controller"
-import Posts from "./posts.controller"
+import Hospital from "./hospital.controller"
+import Servicios from "./servicios.controller"
 
 const pages = {
     home: Home,
-    posts: Posts
+    hospital: Hospital,
+    servicios: Servicios,
 }
 
 export { pages }
