@@ -18,7 +18,10 @@ export default defineConfig({
       ],
     }),
   ],
-  css: {
-    include: ['bootstrap/dist/css/bootstrap.css']
+  build: {
+    ...
+    css: {
+      include: ['bootstrap/dist/css/bootstrap.css']
+    }
   }
 })
