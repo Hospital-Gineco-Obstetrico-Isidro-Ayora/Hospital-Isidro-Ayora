@@ -1,5 +1,6 @@
 
 import { router } from "./src/router";
+import 'bootstrap/dist/css/bootstrap.css';
 
 
 const init = () => {
