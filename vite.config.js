@@ -18,4 +18,7 @@ export default defineConfig({
       ],
     }),
   ],
+  css: {
+    include: ['bootstrap/dist/css/bootstrap.css']
+  }
 })
