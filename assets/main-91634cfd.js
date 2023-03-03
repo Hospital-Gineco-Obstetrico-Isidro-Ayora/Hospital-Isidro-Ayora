@@ -1,0 +1,3 @@
+const o=`\r
+\r
+<h1>Esta es la pagina que ser vera al inicio de  la web</h1>`,s=()=>{const e=document.createElement("div");return e.innerHTML=o,e},a="<h1>ventana de hospital</h1>",c=()=>{const e=document.createElement("div");return e.innerHTML=a,e},r="<h1>vENTANA DE SERVICIOS</h1>",d=()=>{const e=document.createElement("div");return e.innerHTML=r,e},t={home:s,hospital:c,servicios:d},i=async e=>{let n=document.getElementById("root");switch(n.innerHTML="",e){case"#/":return n.appendChild(t.home());case"#/Hospital":return n.appendChild(t.hospital());case"#/Servicios":return n.appendChild(t.servicios())}},h=()=>{i(window.location.hash),window.addEventListener("hashchange",()=>{i(window.location.hash)})};window.addEventListener("load",h);
