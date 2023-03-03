@@ -14,7 +14,6 @@ export default defineConfig({
     copy({
       targets: [
         { src: 'node_modules/bootstrap/dist/css/bootstrap.min.css', dest: 'dist' },
-        { src: 'node_modules/jquery/dist/jquery.slim.min.js', dest: 'dist' },
         { src: 'node_modules/bootstrap/dist/js/bootstrap.min.js', dest: 'dist' },
       ],
     }),

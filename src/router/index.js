@@ -7,16 +7,13 @@ const router = async (route) => {
 
     switch (route) {
         case "#/": {
-            console.log("home")
             return content.appendChild(pages.home())
 
         }
         case "#/Hospital": {
-            console.log("posts")
             return content.appendChild(pages.hospital())
         }
         case "#/Servicios": {
-            console.log("posts")
             return content.appendChild(pages.servicios())
         }
     }
