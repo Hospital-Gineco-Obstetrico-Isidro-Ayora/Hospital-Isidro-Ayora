@@ -19,7 +19,7 @@ export default defineConfig({
       }),
     ],
     css: {
-      include: ['bootstrap/dist/css/bootstrap.css']
+      include: ['./node_modules/bootstrap/dist/css/bootstrap.css']
     }
   }
 });
