@@ -1,5 +1,5 @@
 
-import { router } from "./src/router";
+import { router } from "./src/router/index.js";
 
 
 const init = () => {
@@ -11,5 +11,3 @@ const init = () => {
 };
 
 window.addEventListener("load", init);
-
-
