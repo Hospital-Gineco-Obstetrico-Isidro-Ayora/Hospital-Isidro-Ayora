@@ -1,38 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
 
-    <title> Hospital hospital-gineco-obstretico</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
 
-  <body>
+  <title> Hospital hospital-gineco-obstretico</title>
+</head>
+
+<body>
+  <div class="d-flex container-fluid">
+    <img src="/img/hospital-panoramica.png" class="d-none d-sm-block" width="500px" height="200px" alt="">
+    <div class="flex-grow-1 mx-3 d-flex flex-column justify-content-center align-items-center">
+      <h1 class="hospital-gineco">Hospital Gineco Obstetrico</h1>
+      <strong class="">"Isidro Ayora"</strong>
+    </div>
+    <div class="d-none d-sm-block">
+      <img src="/img/hospital-gineco-obstretico.png" class="aniversario img-fluid" alt="">
+    </div>
+  </div>
+
+
+
+
+  <nav class="container-fluid d-flex justify-content-between align-items-center navbar">
+    <div class="d-flex align-items-center">
+      <img class="img-fluid d-none d-md-block" src="/img/logo_gobierno_encuentro_sin-fondo.png" alt="" width="400px"
+        height="60px">
+      <div class="d-none d-lg-flex justify-content-center align-items-center nav-pc">
+        <a class="btn text-light items-nav " href="#/">Inicio</a>
+        <a class="btn text-light items-nav" href="#/Hospital">Hospital</a>
+        <a class="btn text-light items-nav" href="#/Servicios">Servicio</a>
+      </div>  
+    </div>
+    <div class="search d-flex align-items-center ml-auto">
+      <input type="text" placeholder="Buscar" class="search-text">
+      <button class="btn btn-primary">Buscar</button>
+    </div>
+    <div class="d-flex d-lg-none ml-auto">
+      <button id="menu-toggle" class="navbar-toggler" type="button" aria-controls="navbarNav" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+
+        <li class="nav-item">
+          <a class="nav-link" href="#/">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#/Hospital">Hospital</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="#/Servicios">Servicio</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+
+
+
+  <div class="container-fluid p-4">
+    <section id="root"></section>
+  </div>
+
+  <footer class="site-footer container-fluid">
     <div>
-      <h1 style="color: #08458a ;">Hospital Gineco Obstetrico</h1>
-      <strong style="color: #4783c3;">"Isidro Ayora"</strong>
+      <img src="/img/logo_gobierno_encuentro_sin-fondo.png" alt="" width="400px" height="60px">
     </div>
+  </footer>
 
-    <img src="public/img/hospital-gineco-obstretico.png" alt="">
-  
-    <nav>
-      <div>
-        <a class="btn" href="#/">Inicio</a>
-        <a class="btn" href="#/Hospital">Hospital</a>
-        <a class="btn" href="#/Servicios">Servicio</a>
-      </div>
-    </nav>
+  <script type="module" src="./main.js"></script>
 
-    <div class="container p-4">
-      <section id="root"></section>
-    </div>
+</body>
 
-    <footer class="footer" style="background-color: #0dcaf0;">
-      <img src="public/img/logo_gobierno_encuentro_sin-fondo.png" alt="">
-    </footer>
-    
-    <script type="module"  src="./main.js"></script>
-  </body>
 </html>
