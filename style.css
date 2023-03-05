@@ -1,4 +1,64 @@
-/* Para home*/
-.test{
-    color: red;
+/* Fuente Monserrat*/
+@font-face {
+    font-family: 'Montserrat';
+    src: url("./src/font/Montserrat-Regular.ttf");
 }
+/* Colores */
+:root{
+    --color-footer: #0dcaf0;
+    --color-cabecera:#08458a;
+}
+
+/* Para home*/
+.hospital-gineco{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar{
+    background-color: var(--color-footer);
+}
+.activo{
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+}
+.btn .text-light .items-nav{
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+    border-radius: none;
+}
+
+.nav-link{
+    color: #ffffff;
+}
+.nav-link:hover{
+    color: #ffffff;
+    font-weight: bold;
+}
+.search-text{
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: #ffffff solid 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+}
+
+footer{
+    background-color: var(--color-footer);
+}
+
+.aniversario{
+    width: 400px;
+}
+
+
+/* Para el footer */
+.site-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  
