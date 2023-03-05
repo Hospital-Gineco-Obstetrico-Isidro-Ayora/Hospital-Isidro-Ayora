@@ -21,6 +21,14 @@ El proyecto está desarrollado con las siguientes tecnologías:
 ## Instalación
 Para poder ejecutar el proyecto, es necesario tener instalado NODE, Visual Studi Code. Además, instalar la extension de `VITE` para VSCode y ejecutar el comando `npm install` en la raíz del proyecto.
 
+Tambien se debe instalar la dependencia de `Bootstrap` para poder utilizar los estilos de la librería. Para ello, se debe ejecutar el siguiente comando en la raíz del proyecto:
+
+    npm install bootstrap
+
+Asi como la dependencia de `rollup-plugin-copy` que nos permitira copiar archivos a la carpeta de distribución. Para ello, se debe ejecutar el siguiente comando en la raíz del proyecto:
+
+    npm install rollup-plugin-copy 
+
 ## Ejecución
 
 Para ejecutar el proyecto, se debe ejecutar el siguiente comando en la raíz del proyecto:
