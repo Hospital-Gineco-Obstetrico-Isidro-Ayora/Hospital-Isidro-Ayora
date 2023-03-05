@@ -1,10 +1,90 @@
-<<<<<<< HEAD
-.h1 {
-    font-size: 12px;
-}
-=======
 /* Para home*/
 .test{
     color: red;
 }
->>>>>>> e7bf3324ca518b8cc009d88a355faef36790cd6e
+
+/*************PARA HOSPITAL******************/
+.titulo{
+    font-size:12px;
+}
+
+/*Secciónes de información*/
+.info-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .video-wrapper {
+    flex-basis: 50%;
+    padding-right: 20px;
+    
+  }
+  
+  .video-wrapper video {
+    width: 100%;
+  }
+  
+  .text-wrapper {
+    flex-basis: 50%;
+    padding-right: 20px;
+  }
+  
+  @media (max-width: 767px) {
+    .info-section {
+      flex-direction: column;
+    }
+    
+    .video-wrapper, .text-wrapper {
+      flex-basis: 100%;
+    }
+    
+    .video-wrapper {
+      padding-right: 0;
+      padding-bottom: 20px;
+    }
+  }
+  
+  /*FOMRULARIO*/
+
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  input[type="submit"] {
+    background-color: #0dcaf0;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #0dcaf0;
+  }
+
+  
+  
+  
