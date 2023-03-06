@@ -3,17 +3,30 @@
     font-family: 'Montserrat';
     src: url("./src/font/Montserrat-Regular.ttf");
 }
+/* Configuraciones iniciales para el body*/
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  } 
 /* Colores */
 :root{
     --color-footer: #0dcaf0;
     --color-cabecera:#08458a;
+    --color-isidro:#4884C3;
 }
-
 /* Para home*/
 .hospital-gineco{
     font-family: 'Montserrat', sans-serif;
+    color: var(--color-cabecera);
+    font-size: 2.5em;
+    font-weight: bold;
 }
-
+.isidro{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--color-isidro);
+    font-size: 4em;
+}
 .navbar{
     background-color: var(--color-footer);
 }
@@ -22,12 +35,9 @@
     color: #ffffff;
     font-weight: bold;
 }
-.btn .text-light .items-nav{
-    font-family: 'Montserrat', sans-serif;
-    color: #ffffff;
-    font-weight: bold;
+
+.items-nav{
     border: none;
-    border-radius: none;
 }
 
 .nav-link{
@@ -37,28 +47,68 @@
     color: #ffffff;
     font-weight: bold;
 }
-.search-text{
-    background-color: #ffffff;
-    border-radius: 5px;
-    border: #ffffff solid 1px;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 5px;
-}
 
-footer{
-    background-color: var(--color-footer);
-}
 
 .aniversario{
-    width: 400px;
+    width: 300px;
+    height: 200px;
+}
+.search-group {
+    position: relative;
 }
 
+.search-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+.search-text::placeholder {
+    color: #D9D9D9;
+    font-family: "Montserrat";
+    font-weight: 100;
+}
+.search-text:focus{
+    border: var(--color-cabecera) solid 1px;
+}
+.search-icon:first-of-type {
+  left: 10px;
+  top: 22px;
+  font-size: 20px;
+  color: #D9D9D9;
+}
+
+.search-icon:last-of-type {
+  right: 10px;
+  top: 22px;
+  font-size: 20px;
+  color: var(--color-footer);
+}
+
+.search-text {
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: #ffffff solid 1px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 12px 0px 12px 42px;
+  margin-bottom: 12px;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    margin-left: 10px;
+}
 
 /* Para el footer */
 .site-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-  }
+    margin-top: auto;
+    background-color: var(--color-footer);
+    font-family: 'Montserrat';
+}
   

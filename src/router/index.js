@@ -26,7 +26,6 @@ const router = async (route) => {
         navLinks.forEach(navLink => {
             if(navLink.href === url) {
                 navLink.classList.add('activo');
-                console.log(navLink)
             } else {
                 navLink.classList.remove('activo');
             }
