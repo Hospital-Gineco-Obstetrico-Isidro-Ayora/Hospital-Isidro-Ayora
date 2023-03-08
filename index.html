@@ -5,15 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
-      href="/node_modules/bootstrap/dist/css/bootstrap.min.css"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
+    <link
+      rel="icon"
+      href="public/img/msp-ministerio-de-salud-publica-logo-867969877C-seeklogo.com.png"
+    />
 
-    <title>Hospital hospital-gineco-obstretico</title>
+    <title tabindex="1">Hospital Gineco Obstetrico "Isidro Ayora"</title>
   </head>
 
   <body>
@@ -23,47 +30,84 @@
         class="d-none d-sm-block"
         width="500px"
         height="200px"
-        alt=""
+        alt="Vista panoramica del Hospital Gineco Obstetrico Isidro Ayora"
+        tabindex="2"
       />
       <div
         class="flex-grow-1 mx-3 d-flex flex-column justify-content-center align-items-center"
       >
-        <h1 class="hospital-gineco">Hospital Gineco Obstetrico</h1>
-        <strong class="isidro">"Isidro Ayora"</strong>
+        <h1 class="hospital-gineco" tabindex="3">Hospital Gineco Obstetrico</h1>
+        <strong class="isidro" tabindex="4">"Isidro Ayora"</strong>
       </div>
-      <div class="d-none d-sm-block">
+      <div class="d-none d-sm-block" tabindex="5">
         <img
           src="/img/hospital-gineco-obstretico.png"
           class="aniversario img-fluid"
           alt="Imagen de los 70 Años de aniversario "
+          tabindex="6"
         />
       </div>
     </div>
 
     <nav
       class="container-fluid d-flex justify-content-between align-items-center navbar"
+      aria-label="Barra de navegacion"
+      tabindex="7"
     >
       <div class="d-flex align-items-center">
         <img
           class="img-fluid d-none d-md-block"
           src="/img/logo_gobierno_encuentro_sin-fondo.png"
-          alt=""
+          alt="Logo e imagen del ministerio de salud publica  "
           width="400px"
           height="60px"
+          tabindex="8"
         />
         <div
           class="d-none d-lg-flex justify-content-center align-items-center nav-pc"
         >
-          <a class="btn text-light items-nav" href="#/">Inicio</a>
-          <a class="btn text-light items-nav" href="#/Hospital">Hospital</a>
-          <a class="btn text-light items-nav" href="#/Servicios">Servicio</a>
+          <a
+            class="btn text-light items-nav"
+            tabindex="9"
+            aria-label="Redireccion a la ventana de inicio"
+            href="#/"
+            >Inicio</a
+          >
+          <a
+            class="btn text-light items-nav"
+            tabindex="10"
+            aria-label="Redireccion a la ventana Hospital"
+            href="#/Hospital"
+            >Hospital</a
+          >
+          <a
+            class="btn text-light items-nav"
+            tabindex="11"
+            aria-label="Redireccion a la ventana de Servicios"
+            href="#/Servicios"
+            >Servicio</a
+          >
         </div>
       </div>
-      <div class="search  ml-auto">
-        <div class="search-group">
-          <i class="fas fa-search search-icon"></i>
-          <input type="text" placeholder="Buscar" class="search-text" />
-          <i class="fas fa-microphone search-icon record"></i>
+      <div class="search ml-auto">
+        <div class="search-group" tabindex="12">
+          <i
+            class="fas fa-search search-icon"
+            tabindex="13"
+            aria-label="Icono de buscar"
+          ></i>
+          <input
+            type="text"
+            tabindex="14"
+            placeholder="Buscar"
+            class="search-text label"
+            aria-label="Entrada de texto Buscar"
+          />
+          <i
+            class="fas fa-microphone search-icon record"
+            aria-label="Icono para ingresar audio"
+            tabindex="15"
+          ></i>
         </div>
         <button class="btn btn-primary">Buscar</button>
       </div>
@@ -94,19 +138,61 @@
       </div>
     </nav>
 
+    <!-- Carrusel -->
+
     <div class="container-fluid p-4">
       <section id="root"></section>
     </div>
 
-    <footer class="site-footer container-fluid">
-      <div>
-        <img
-          src="/img/logo_gobierno_encuentro_sin-fondo.png"
-          alt=""
-          width="400px"
-          height="60px"
-        />
+    <footer class="site-footer">
+      <img
+        src="/img/logo_gobierno_encuentro_sin-fondo.png"
+        alt=""
+        class="gob-encuentro img-fluid m-0"
+      />
+      <div class="info-container">
+        <div class="info align-items-start">
+          <span> <i class="fas fa-hospital    "></i> Hospital Gineco Obstrético “Isidro Ayora”</span>
+          <span> <i class="fa fa-map-marker    "></i> Av. Gran Colombia N14-66 y Luis Sodiro. (San Blas)</span>
+          <span> <i class="fa fa-phone" aria-hidden="true"></i> Teléfonos: +593 02-2542935 / 02-2224503</span>
+          <span> <i class="fa fa-envelope" aria-hidden="true"></i> info@hgoia.gob.ec</span>
+        </div>
+        <span class="direccion">Quito - Ecuador</span>
       </div>
+      
+      <!-- Reloj -->
+      <div class="atencion">
+        <div class="clock">
+          <span id="hours"></span>
+          <span>:</span>
+          <span id="minutes"></span>
+          <span>:</span>
+          <span id="seconds"></span>
+        </div>
+        <!-- Horario de atencion 24 / 7-->
+        <div class="horario">
+          
+        <i class="fas fa-clock    "></i>
+          <span>Horario de atención 24/7</span>
+        </div>
+      </div>
+
+      <!-- Social networks-->
+      <div class="social-networks">
+        <a href="https://www.facebook.com/HGOIA" target="_blank">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://twitter.com/HGOIA" target="_blank">
+          <i class="fab fa-twitter"></i>
+        </a>
+
+        <a href="https://www.instagram.com/hgoia/" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+
+      
+
     </footer>
 
     <script type="module" src="./main.js"></script>

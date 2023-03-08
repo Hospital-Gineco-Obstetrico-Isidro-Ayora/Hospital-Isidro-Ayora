@@ -26,14 +26,10 @@ const router = async (route) => {
             }
         });
     };
-    
-
-
-
 
     switch (route) {
         case "#/": {
-            titleElement.innerHTML = "Home";
+            titleElement.innerHTML = "Inicio";
             setActiveNavItem('.navbar-nav .nav-link', 'li');
             setActiveNavItem('.nav-pc .items-nav', 'a'); 
 
