@@ -10,6 +10,172 @@
   font-family: "Montserrat";
   src: url("./src/font/Montserrat-Regular.ttf");
 }
+
+/*************PARA HOSPITAL******************/
+.titulo{
+    font-size:12px;
+}
+/*Mision, vision y valores*/
+.container-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 15px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+#info {
+  display: none;
+  width: 100%;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+
+/*Secciónes de información*/
+.info-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .video-wrapper {
+    /*flex-basis: 50%;*/
+    padding-right: 20px;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .video-wrapper video {
+    width: 100%;
+  }
+  
+  .text-wrapper {
+    flex-basis: 50%;
+    padding-right: 20px;
+  }
+
+  .full-text-wrapper{
+    flex-basis: 84%;
+    padding-right: auto;
+  }
+  
+  @media (max-width: 767px) {
+    .info-section {
+      flex-direction: column;
+    }
+    
+    .video-wrapper, .text-wrapper {
+      flex-basis: 100%;
+    }
+    
+    .video-wrapper {
+      padding-right: 0;
+      padding-bottom: 20px;
+    }
+  }
+  
+  /*FOMRULARIO*/
+  .titulo-contacto{
+    justify-content: center;
+    align-items: center;
+    padding-left:auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  input[type="submit"] {
+    background-color: #0dcaf0;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #0dcaf0;
+  }
+
+  hr.soften {
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.8), rgba(0,0,0,0));
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.8), rgba(0,0,0,0));
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.8), rgba(0,0,0,0));
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.8), rgba(0,0,0,0));
+    border: 0;
+  }
+
+/*BACK TO TOP BUTTON*/
+#back-top {
+  position: fixed; 
+  display:none; 
+  font-size: 50px;
+  color: #fff;
+  mix-blend-mode: difference;
+  bottom: 10px; 
+  right:10px; 
+  width:auto;
+}
+a#back-top:active {
+  background:none;
+}
+a#back-top {
+  display: block; 
+  text-decoration: none;
+}
+.topup {
+  bottom:5px;
+}
+#back-top i {
+  display: block;
+}
+
+
+
+
+
+
+  
+  
 /* Configuraciones iniciales para el body*/
 body {
     display: flex;
