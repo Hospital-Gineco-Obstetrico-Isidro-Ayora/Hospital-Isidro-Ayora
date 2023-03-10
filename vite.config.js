@@ -10,14 +10,7 @@ export default defineConfig({
 
       },
     },
-    plugins: [
-      copy({
-        targets: [
-          { src: './node_modules/bootstrap/dist/css/bootstrap.min.css', dest: 'dist' },
-          { src: './node_modules/bootstrap/dist/js/bootstrap.min.js', dest: 'dist' },
-        ],
-      }),
-    ],
+    
     css: {
       include: ['./node_modules/bootstrap/dist/css/bootstrap.css']
     }

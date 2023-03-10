@@ -1,7 +1,7 @@
 {
   "homepage": "https://Fernando473.github.io/Hospital-Gineco-Obstetrico-Isidro-Ayora/Hospital-Isidro-Ayora",
   "name": "hospital-isidro-ayora",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -23,5 +23,5 @@
     "html-loader": "^4.2.0",
     "vite-plugin-html": "^3.2.0"
   }
-  
+
 }
