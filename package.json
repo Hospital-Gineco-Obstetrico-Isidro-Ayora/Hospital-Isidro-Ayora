@@ -19,6 +19,9 @@
   "dependencies": {
     "bootstrap": "^5.2.3",
     "rollup-plugin-copy": "^3.4.0",
-    "vite-plugin-string": "^1.2.1"
+    "vite-plugin-string": "^1.2.1",
+    "html-loader": "^4.2.0",
+    "vite-plugin-html": "^3.2.0"
   }
+  
 }
